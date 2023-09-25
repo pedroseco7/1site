@@ -1,0 +1,98 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Povos indígenas e a sua música</title> 
+    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+</head>
+<body>
+    <div class="container">
+       <div class="navbar">
+           <img src="images/imagem_2022-10-24_154656136-removebg-preview (1).png" class="logo">
+           <nav>
+               <ul>
+                   <li class="ini"><a href="index.html">INÍCIO</a></li>
+                   <li class="reg"><a href="regiao.html">REGIÃO</a></li>
+                   <li class="sob"><a href="sobre.html">SOBRE</a></li>
+               </ul>
+           </nav>
+         
+       </div>
+       <br>
+
+       
+       <div class="video-container">
+        <video autoplay loop  id="video-bg">
+  
+          <source src="images/garifunas.mp4" type="video/mp4">
+  
+        </video>
+      </div>
+
+<p class="p1">Os Garifunas</p>
+<p class="p2">Desliza para baixo para saberes mais!</p>
+
+ <p class="garifunas1">
+    <p class="garifunes">Este “caribes Negros” conhecidos como Garifunas vivem principalmente ao longo da costa leste da América Central, desde Belize até à Nicarágua, e na ilha de S. Vicente.</p>
+    <p class="garifunes">As crenças religiosas Garifunas reflectem a diversidade de influências sofridas pelos seus antepassados. Para além do Deus cristão, os garifunas adoram os espíritos dos seus antepassados e também alguns seres sobrenaturais, em volta dos quais criam complicados rituais.</p>
+    <p class="garifunes">Os Garifunas marcam as suas celebrações religiosas ou laicas com música baseada em ritmos fortes e facilmente identificáveis. Cada ritmo está associado a uma dança particular, executada por homens e mulheres com a particularidade de nunca levantarem os pés do chão. Todos os movimentos são feitos com a cintura e os quadris, e os bailarinos inclinam-se suavemente para a frente, em bicos de pés.</p>
+    <p class="garifunes">Normalmente um deles dança no centro de um círculo respondendo diretamente ao apelo dos tambores. As danças Garifunas são baseadas em ritmos específicos. A Punta dança-se habitualmente em festas populares, aniversários e festas religiosas. A Parranda é o ritmo dos desfiles de rua, muito populares entre os garifunas.</p>
+    <p class="garifunes">Todos os ritmos são sempre executados com auxílio dos tambores Garifunas chamados garaon. Estes tambores são feitos de troncos de mogno ocos, escavados para ficarem com forma de barris cónicos, cobertos de peles de veado.</p>
+ </p>
+
+
+       <div class="slider">
+        <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+    
+            <div class="slide first">
+                <a href=""><img src="images/image8.1.png" alt=""></a>
+            </div>
+            <div class="slide">
+                <a href=""><img src="images/image10.png" alt=""></a>
+            </div>
+            <div class="slide">
+                <a href=""><img src="images/image11.png" alt=""></a>
+            </div>
+            <div class="slide">
+                <a href=""><img src="images/image12.png" alt=""></a>
+            </div>
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+        </div>
+        <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+        </div>
+    </div>
+    <script type="text/javascript">
+    var counter = 1;
+    setInterval(function(){
+        document.getElementById ('radio' + counter).checked = true;
+        counter++;
+        if(counter > 4){
+            counter = 1;
+        }
+    }, 2500)
+    </script>
+
+
+
+       <div class="pagination">
+        <a href="ainus.html" class="prev"><i class="fas fa-angle-left"></i></a>
+        <a href="tuvanos.html" class="num">1</a>
+        <a href="ainus.html" class="num">2</a>
+        <a href="garifunas.html" class="num active">3</a>
+        <a href="quechuas.html" class="num">4</a>
+        <a href="quechuas.html" class="next"><i class="fas fa-angle-right"></i></a>

@@ -1,0 +1,98 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Povos indígenas e a sua música</title> 
+    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+</head>
+<body>
+    <div class="container">
+       <div class="navbar">
+           <img src="images/imagem_2022-10-24_154656136-removebg-preview (1).png" class="logo">
+           <nav>
+               <ul>
+                   <li class="ini"><a href="index.html">INÍCIO</a></li>
+                   <li class="reg"><a href="regiao.html">REGIÃO</a></li>
+                   <li class="sob"><a href="sobre.html">SOBRE</a></li>
+               </ul>
+           </nav>
+          
+       </div>
+       
+       <div class="video-container">
+        <video autoplay loop  id="video-bg">
+  
+          <source src="images/quechuas.mp4" type="video/mp4">
+  
+        </video>
+      </div>
+
+<p class="p1">Os Quechuas</p>
+<p class="p2">Desliza para baixo para saberes mais!</p>
+       
+<p class="quechuas1">
+   <p class="quechues">Os povos Quechuas estão unidos por uma língua e uma cultura que descendem directamente dos antigos Incas. Vivem ao longo dos Andes, desde a Colômbia à Argentina. Dos 12 milhões de QUECHUAS que existem hoje na América Latina, quase 3 milhões vivem na Bolívia.</p>
+   <p class="quechues">A Bolívia situa-se no coração do continente sul-americano cercado de terra por todos os lados. O Cerro Rico ou “Montanha Rica” em Potosi, na Bolívia, é assim chamado por encerrar riquíssimos filões de prata, extensivamente explorados pelos espanhóis nos séculos XVI e XVII.</p>
+   <p class="quechues">Segundo uma lenda Quechua, um antigo Inca teria descoberto o precioso metal no fundo de uma gruta e nesse exacto momento teria ouvido uma voz avisando, em Quechua: “Estas riquezas não são para ti, estão destinadas àqueles que virão de muito longe”.</p>
+   <p class="quechues">Potosi tornou-se rapidamente um foco importante do Império Espanhol. Muitos Quechuas foram forçados a deixar as suas terras para irem trabalhar nestas minas, onde ganhavam salários de miséria e contraíam terríveis doenças.</p>
+   <p class="quechues">Os agrupamentos musicais Quechuas, chamados “tropas”, normalmente são compostos por tocadores de flautas de pastor e flautas de pan.</p>
+   <p class="quechues">Após séculos de domínio espanhol a Bolívia libertou-se a si própria e tornou-se um estado independente em 1825. As consequências da actividade missionária no país foram muito fortes e o Catolicismo Romano foi declarado religião oficial do estado através da Constituição de 1880. No entanto as crenças tradicionais mantiveram todo o seu vigor até aos dias de hoje.</p>
+
+</p>
+
+
+       <div class="slider">
+        <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+    
+            <div class="slide first">
+                <a href=""><img src="images/image14.png" alt=""></a>
+            </div>
+            <div class="slide">
+                <a href=""><img src="images/image13.png" alt=""></a>
+            </div>
+            <div class="slide">
+                <a href=""><img src="images/image15.png" alt=""></a>
+            </div>
+            <div class="slide">
+                <a href=""><img src="images/image16.png" alt=""></a>
+            </div>
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+        </div>
+        <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+        </div>
+    </div>
+    <script type="text/javascript">
+    var counter = 1;
+    setInterval(function(){
+        document.getElementById ('radio' + counter).checked = true;
+        counter++;
+        if(counter > 4){
+            counter = 1;
+        }
+    }, 2500)
+    </script>
+
+
+
+       <div class="pagination">
+        <a href="garifunas.html" class="prev"><i class="fas fa-angle-left"></i></a>
+        <a href="tuvanos.html" class="num">1</a>
+        <a href="ainus.html" class="num">2</a>
+        <a href="garifunas.html" class="num">3</a>
+        <a href="quechuas.html" class="num active">4</a>
+        <a href="tuvanos.html" class="next"><i class="fas fa-angle-right"></i></a>

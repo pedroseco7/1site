@@ -1,0 +1,99 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Povos indígenas e a sua música</title> 
+    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://www.fontspace.com/aquire-font-f43735">
+  
+   
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="images/imagem_2022-10-24_154656136-removebg-preview (1).png" class="logo">
+            <nav>
+                <ul>
+                    <li class="ini"><a href="index.html">INÍCIO</a></li>
+                    <li class="reg"><a href="regiao.html">REGIÃO</a></li>
+                    <li class="sob"><a href="sobre.html">SOBRE</a></li>
+                </ul>
+            </nav>
+          
+        </div>  
+    
+        <div class="video-container">
+            <video autoplay loop  id="video-bg">
+      
+              <source src="images/Untitled video Made with Clipchamp.mp4" type="video/mp4">
+      
+            </video>
+          </div>
+
+<p class="p1">Os Tuvanos</p>
+<p class="p2">Desliza para baixo para saberes mais!</p>
+
+<p class="tuvanes1">
+<p class="tuvanes">O povo Tuvano é oriundo da região de Tuva, território não muito distante da fronteira entre a Rússia e a Mongólia</p>
+<p class="tuvanes">Este povo de raiz turca vindo do sul da Sibéria já foi governado pelos Mongois e pelos chineses. Os Tuvanos foram formados em 1921, com o apoio da antiga União Soviética. Em 1944 tornou-se parte da URSS e atualmente é uma república autónoma dentro da Federação Russa. </p>
+<p class="tuvanes">A música mais impressionante de TUVA é a que os Tuvanos chamam de “Khoomei”, referindo-se à palavra que significa “garganta” na língua mongol. Normalmente definido como “canto gutural” (throat-singing) este estilo de cantar foi no entanto já chamado também de canto harmónico e canto bifónico ou difónico por diversos etnomusicólogos. Tuva, rodeada essencialmente por montanhas, era até há pouco tempo de difícil acesso.  A primeira tentativa de escrever a língua tuvana foi feita em 1930, porque, até então, a sua cultura era transmitida apenas por tradição oral.</p>
+<p class="tuvanes">Nesta terra, quase inteiramente rural, a ocupação tradicional é ainda a pastorícia. Os pastores Tuvanos perpetuam o seu antigo estilo de vida nómada, deslocando-se frequentemente para alimentar os seus rebanhos e mantê-los a salvo das intempéries.</p>
+<p class="tuvanes">Os Tuvanos são conhecidos pelo seu canto particular denominado "Steppe Kargiraa". Canta-se no extremo de uma estepe ventosa, com o cantor de cabeça virada para o vento, formando um ângulo preciso enquanto ajusta devidamente os lábios.</p>
+</p>
+ <div class="slider">
+    <div class="slides">
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+
+        <div class="slide first">
+            <a href=""><img src="images/image1.png" alt=""></a>
+        </div>
+        <div class="slide">
+            <a href=""><img src="images/image2.png" alt=""></a>
+        </div>
+        <div class="slide">
+            <a href=""><img src="images/image3.png" alt=""></a>
+        </div>
+        <div class="slide">
+            <a href=""><img src="images/image4.png" alt=""></a>
+        </div>
+        <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+        </div>
+    </div>
+    <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+    </div>
+</div>
+<script type="text/javascript">
+var counter = 1;
+setInterval(function(){
+    document.getElementById ('radio' + counter).checked = true;
+    counter++;
+    if(counter > 4){
+        counter = 1;
+    }
+}, 2500)
+</script>
+ 
+<div class="pagination">
+    <a href="quechuas.html" class="prev"><i class="fas fa-angle-left"></i></a>
+    <a href="tuvanos.html" class="num active">1</a>
+    <a href="ainus.html" class="num">2</a>
+    <a href="garifunas.html" class="num">3</a>
+    <a href="quechuas.html" class="num">4</a>
+    <a href="ainus.html" class="next"><i class="fas fa-angle-right"></i></a>
+
+</div>
+
+</body>
